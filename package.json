@@ -1,7 +1,7 @@
 {
-  "name": "it452_final-project_sai-vineela",
+  "name": "final-project_sai-vineela",
   "version": "1.0.0",
-  "description": "I declare that I developed the code of Final project by myself. Sai Vineela Madamanchi",
+  "description": "Social Media Analysis",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
