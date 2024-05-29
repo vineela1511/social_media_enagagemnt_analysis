@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT 452 Final Project: Sai Vineela Madamanchi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script> 
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h2>IT 452 Final Project: Sai Vineela Madamanchi</h2>
+
+    <div id="lineplot" class="chart-container">
+        <h3>Line Chart to show the average time spent on social media</h3>
+        <div id="controls">
+            <label for="min-age">Min Age: <span id="min-age-value">0</span></label>
+            <input type="range" id="min-age" min="0" max="100" value="0">
+            <label for="max-age">Max Age: <span id="max-age-value">100</span></label>
+            <input type="range" id="max-age" min="0" max="100" value="100">
+        </div>
+        <!-- SVG or chart container will be injected here by D3.js -->
+    </div>
+
+    <hr>
+
+    <h3>World Map of social media usage</h3>
+    <div id="worldmap" class="chart-container"></div>
+    <hr>
+
+    <h3>Pie Chart Social Media Platform Distribution by Income Bracket</h3>
+    <div id="piechart" class="chart-container"></div>
+    <hr>
+
+    <h3>Bar chart for Average Time Spent on Social Media by Profession </h3>
+    <div id="dropdown" class="chart-container"></div>
+    <div id="barchart" class="chart-container"></div>
+    <hr>
+
+    <h3>Stacked Bar Chart Distribution Across Social Media Platforms by Gender</h3>
+    <div id="stackedBarChart" class="chart-container"></div>
+    
+    <div id="tooltip" style="position: absolute; opacity: 0; pointer-events: none; background-color: white; padding: 8px; border: 1px solid #000; border-radius: 3px;"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/linePlot.js"></script>
+    <script src="js/worldMap.js"></script>
+    <script src="js/pieChart.js"></script>
+    <script src="js/barChart.js"></script>
+    <script src="js/stackedBarChart.js"></script>
+</body>
+</html>
